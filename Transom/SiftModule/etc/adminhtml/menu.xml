@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Transom_SiftModule::menu" title="Transom Sift" module="Transom_SiftModule" sortOrder="51"  dependsOnModule="Transom_SiftModule" resource="Transom_SiftModule::menu"/>
+
+      <!--  <add id="Transom_SiftModule::menu_item" title="Configuration" module="Transom_SiftModule" sortOrder="10"  dependsOnModule="Transom_SiftModule" parent="Transom_SiftModule::menu" action="SiftMenu/ConfigMenu/SiftSetup" resource="Transom_SiftModule::menu_item"/> -->
+
+        <add id="Transom_SiftModule::sift_configuration" title="Configuration" module="Transom_SiftModule" sortOrder="99" parent="Transom_SiftModule::menu" action="adminhtml/system_config/edit/section/transom" resource="Transom_SiftModule::sift_config"/>
+    </menu>
+</config>

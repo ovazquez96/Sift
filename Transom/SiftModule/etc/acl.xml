@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Transom_SiftModule::menu">
+                    <resource id="Transom_SiftModule::menu_item" title="Configuration" sortOrder="80">
+                        <resource id="Transom_SiftModule::sift_config" title="Configuratiom" sortOrder="80"/>
+
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

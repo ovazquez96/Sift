@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">
+		<!--
+    <event name="sales_order_place_before">
+        <observer name="transom_SiftModule_transaction" instance="Transom\SiftModule\Observer\Events\CreateOrderEvent" />
+    </event>
+	-->
+	
+	 <event name="sales_order_place_after">
+        <observer name="transom_SiftModule_transaction" instance="Transom\SiftModule\Observer\Events\CreateOrderEvent" />
+    </event>
+	
+    <event name="sales_order_payment_place_end">
+        <observer name="transom_SiftModule_test_payment_place_end" instance="Transom\SiftModule\Observer\Events\TransactionEvent" />
+    </event>
+    
+</config>

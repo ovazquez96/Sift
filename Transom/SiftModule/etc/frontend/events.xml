@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+
+	<event name="customer_register_success">
+        <observer name="transom_SiftModule_create_account" instance="Transom\SiftModule\Observer\Events\CreateAccountEvent" />
+    </event>
+
+	<event name="customer_address_save_after">
+        <observer name="transom_SiftModule_update_account_address" instance="Transom\SiftModule\Observer\Events\UpdateAccountAddress" />
+    </event>
+
+    <event name="customer_login">
+        <observer name="transom_SiftModule_account_login" instance="Transom\SiftModule\Observer\Events\AccountLoginEvent" />
+    </event>
+
+    <event name="customer_logout">
+        <observer name="transom_SiftModule_account_logout" instance="Transom\SiftModule\Observer\Events\AccountLogoutEvent" />
+    </event>
+
+</config>
